@@ -152,7 +152,9 @@ for(laco=1;laco=1;) // função
 	printf("Escolha a opção desejada do menu: \n\n");
 	printf("\t1 - Registra Nomes \n");
 	printf("\t2 - Consultar Nomes \n");
-	printf("\t3 - Deletar Nomes \n"); // fim do menu
+	printf("\t3 - Deletar Nomes \n"); // sair do menu 
+	printf("\t4 - sair do sistema \n");// sair do sistema
+
 	printf("Opcão: "); 
 	
 	scanf ("%d", &opcao); // armazenamento de escolha usuário
@@ -173,6 +175,11 @@ for(laco=1;laco=1;) // função
 		case 3:
 		Deletar();
 		break;
+		
+		case 4:
+		printf("Obrigado por utilizar o Sistema !! \n");
+		return 0;
+		break;	
 		
 		default:
 		printf("Não existe essa Opcão! \n");
